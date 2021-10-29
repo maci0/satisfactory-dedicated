@@ -8,4 +8,4 @@ test -d ~/.config/Epic/FactoryGame/Saved || mkdir -p ~/.config/Epic/FactoryGame/
 test -d ${STEAMAPPDIR}/saves || mkdir ${STEAMAPPDIR}/saves
 test -L ~/.config/Epic/FactoryGame/Saved/SaveGames || ln -s ${STEAMAPPDIR}/saves ~/.config/Epic/FactoryGame/Saved/SaveGames
 
-exec ${STEAMAPPDIR}/FactoryServer.sh"
+exec ${STEAMAPPDIR}/FactoryServer.sh
