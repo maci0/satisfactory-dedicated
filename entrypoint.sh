@@ -12,4 +12,4 @@ test -L ~/.config/Epic/FactoryGame/Saved/SaveGames || ln -s ${STEAMAPPDIR}/saves
 
 UE4_PROJECT_ROOT=${STEAMAPPDIR}
 chmod +x "$UE4_PROJECT_ROOT/Engine/Binaries/Linux/UE4Server-Linux-Shipping"
-exec "$UE4_PROJECT_ROOT/Engine/Binaries/Linux/UE4Server-Linux-Shipping" FactoryGame "$@"
+exec "$UE4_PROJECT_ROOT/Engine/Binaries/Linux/UE4Server-Linux-Shipping" FactoryGame -MultiHome=0.0.0.0 "$@"
